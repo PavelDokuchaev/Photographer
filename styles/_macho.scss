@@ -1,0 +1,135 @@
+.project {
+  display: flex;
+  flex-direction: column;
+
+  &-head {
+    color: rgb(50, 50, 50);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Gilroy-Medium';
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  &-text {
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Gilroy-Medium';
+    text-align: justify;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  &-list {
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Gilroy-Medium';
+    text-align: justify;
+    margin-bottom: 25px;
+    line-height: 20px;
+
+    li {
+      list-style-position:inside;
+    }
+  }
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+
+  &-img {
+    max-height: 700px;
+  }
+}
+
+.slider img {
+  max-width: 100%;
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.prev-button {
+  left: -80px;
+}
+
+.next-button {
+  right: -80px;
+}
+
+.dots, .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: 'Gilroy-Medium';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot.active {
+  background-color: rgb(87, 87, 87);
+  color: rgb(255, 254, 242);
+}
+
+.prev-button, .next-button {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  background-color: rgba(92, 92, 92, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50%;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(92, 92, 92, 0.8);
+}
+

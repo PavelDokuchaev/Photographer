@@ -1,0 +1,26 @@
+.project-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+
+  &__img {
+    max-width: 800px;
+  }
+
+  &__text {
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Gilroy-Medium';
+    text-align: justify;
+    line-height: 20px;
+
+    &-head {
+      font-weight: 700;
+    }
+  }
+}
+
